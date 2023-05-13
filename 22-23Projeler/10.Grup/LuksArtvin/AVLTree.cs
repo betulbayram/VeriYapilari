@@ -273,4 +273,16 @@ public class AVLTree
         }
     }
 
+    public void LoadTourInformation()
+    {
+        string fileName = "tour-information.txt";
+        string[] rows = File.ReadAllLines(fileName);
+
+        foreach (string row in rows)
+        {
+            Tour tour = Tour.Parse(row);
+            Add(tour);
+        }
+    }
+
 }
