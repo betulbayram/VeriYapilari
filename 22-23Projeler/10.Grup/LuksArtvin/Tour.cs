@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
 // Servis sınıfı
-public class Servis
+public class Tour
 {
     public int ID { get; set; } = default!;
     public DateTime dt { get; set; } = default!;

@@ -284,5 +284,4 @@ public class AVLTree
             Add(tour);
         }
     }
-
 }
