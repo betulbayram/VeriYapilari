@@ -252,4 +252,24 @@ public class AVLTree
             return node.Tour;
         }
     }
+
+    public void SaveTourInformation()
+    {
+        fileName = "tour-information.txt";
+        using (StreamWriter writer = new StreamWriter(fileName))
+        {
+            SaveTourInformationRecursive(root, writer);
+        }
+    }
+
+    private void SaveTourInformationRecursive(AVLNode node, StreamWriter writer)
+    {
+        if (node != null)
+        {
+            SaveTourInformationRecursive(node.Left, writer);
+            writer.WriteLine(node.Tour);
+            SaveTourInformationRecursive(node.Right, writer);
+        }
+    }
+
 }
