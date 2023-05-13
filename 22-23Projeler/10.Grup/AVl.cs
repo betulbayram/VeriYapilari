@@ -1,3 +1,0 @@
-//deneme
-//selam
-//test ediyorum :)))
