@@ -1,0 +1,5 @@
+B:\YARIYIL_6\VERI_YAPILARI\VeriYapilari\22-23Projeler\10.Grup\LuksArtvin\obj\Debug\net7.0-windows\LuksArtvin.csproj.AssemblyReference.cache
+B:\YARIYIL_6\VERI_YAPILARI\VeriYapilari\22-23Projeler\10.Grup\LuksArtvin\obj\Debug\net7.0-windows\LuksArtvin.GeneratedMSBuildEditorConfig.editorconfig
+B:\YARIYIL_6\VERI_YAPILARI\VeriYapilari\22-23Projeler\10.Grup\LuksArtvin\obj\Debug\net7.0-windows\LuksArtvin.AssemblyInfoInputs.cache
+B:\YARIYIL_6\VERI_YAPILARI\VeriYapilari\22-23Projeler\10.Grup\LuksArtvin\obj\Debug\net7.0-windows\LuksArtvin.AssemblyInfo.cs
+B:\YARIYIL_6\VERI_YAPILARI\VeriYapilari\22-23Projeler\10.Grup\LuksArtvin\obj\Debug\net7.0-windows\LuksArtvin.csproj.CoreCompileInputs.cache

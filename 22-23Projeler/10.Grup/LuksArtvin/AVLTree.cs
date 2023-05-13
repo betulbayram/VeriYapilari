@@ -255,7 +255,7 @@ public class AVLTree
 
     public void SaveTourInformation()
     {
-        fileName = "tour-information.txt";
+        string fileName = "tour-information.txt";
         using (StreamWriter writer = new StreamWriter(fileName))
         {
             SaveTourInformationRecursive(root, writer);
