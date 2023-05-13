@@ -1,0 +1,10 @@
+﻿Id,Arac-Plakası,Marka,Model,Arac-Turu,Uretim-Yılı,Koltuk-Sayısı,Klima,Wifi
+0,16 ABC 01,Marka231,model1,Otobüs,2020,50,True,False
+1,34 DEF 02,Marka2,model2,Otobüs,2018,40,False,True
+2,34 GHI 06,tofaş,SLX,Sedan,2000,5,False,False
+3,34 ZF 666,Ford,Kuga,Otobüs,2020,50,True,False
+4,10 VN 475,Tofaş,Doğan,Otobüs,2018,40,False,True
+5,67 KMR 140,Audi,Q7,Otobüs,2018,40,False,True
+6,01 BB 355,Mercedes,Roadster,Otobüs,2018,40,False,True
+7,43 CYZ 473,Togg,T8CX,Otobüs,2018,40,False,True
+8,16 NGG 37,Honda,model2,Otobüs,2018,40,False,True

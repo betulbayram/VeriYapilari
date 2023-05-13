@@ -1,0 +1,16 @@
+C:\Users\ejder\source\repos\Araclar\Araclar\bin\Debug\netcoreapp3.1\Araclar.exe
+C:\Users\ejder\source\repos\Araclar\Araclar\bin\Debug\netcoreapp3.1\Araclar.deps.json
+C:\Users\ejder\source\repos\Araclar\Araclar\bin\Debug\netcoreapp3.1\Araclar.runtimeconfig.json
+C:\Users\ejder\source\repos\Araclar\Araclar\bin\Debug\netcoreapp3.1\Araclar.runtimeconfig.dev.json
+C:\Users\ejder\source\repos\Araclar\Araclar\bin\Debug\netcoreapp3.1\Araclar.dll
+C:\Users\ejder\source\repos\Araclar\Araclar\bin\Debug\netcoreapp3.1\Araclar.pdb
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.csproj.AssemblyReference.cache
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.AssemblyInfoInputs.cache
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.AssemblyInfo.cs
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.csproj.CoreCompileInputs.cache
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.dll
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.pdb
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.genruntimeconfig.cache
+C:\Users\ejder\source\repos\Araclar\Araclar\bin\Debug\netcoreapp3.1\LINQtoCSV.dll
+C:\Users\ejder\source\repos\Araclar\Araclar\obj\Debug\netcoreapp3.1\Araclar.csproj.CopyComplete

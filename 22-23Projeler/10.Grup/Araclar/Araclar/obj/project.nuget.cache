@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "xtmBsZX4qYFfQ61cnswxHfjO4NyPEqkiD9EeR6no53jIzGJsAhmMvH+FGi3sCb359rOsUpI48ODsP/r/Zuf2ag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ejder\\source\\repos\\Araclar\\Araclar\\Araclar.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ejder\\.nuget\\packages\\linqtocsv\\1.5.0\\linqtocsv.1.5.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "'LINQtoCSV 1.5.0' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v3.1' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
+      "libraryId": "LINQtoCSV",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
