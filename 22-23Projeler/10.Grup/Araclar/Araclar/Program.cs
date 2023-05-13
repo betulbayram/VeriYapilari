@@ -10,9 +10,6 @@ namespace Araclar
         static void Main(string[] args)
         {
 
-            
-
-            
             İkiYönlüListe liste = new İkiYönlüListe();//liste olustur
 
             ReadCsvFile(liste);//csvokuyorum listeye ekliyorum
@@ -23,7 +20,7 @@ namespace Araclar
         }
         public static void ReadCsvFile(İkiYönlüListe liste)
         {
-            var csvFileDescription = new CsvFileDescription
+            var csvFileDescription = new CsvFileDescription// csv okunma kurallarını tanımlar
             {
                 FirstLineHasColumnNames = true,
                 IgnoreUnknownColumns = true,
