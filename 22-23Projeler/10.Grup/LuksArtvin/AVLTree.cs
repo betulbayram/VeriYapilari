@@ -213,6 +213,7 @@ public class AVLTree
 
              return node;
         }
+        return null;
     }
 
     private AVLNode GetMin(AVLNode node)
