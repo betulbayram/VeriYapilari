@@ -1,3 +1,6 @@
+
+using System;
+using System.IO;
 public class AVLNode
 {
     public int Height { get; set; } = default!;
@@ -256,32 +259,61 @@ public class AVLTree
 
     public void SaveTourInformation()
     {
-        string fileName = "tour-information.txt";
+        string fileName = "tour-information.csv";
         using (StreamWriter writer = new StreamWriter(fileName))
         {
-            SaveTourInformationRecursive(root, writer);
+            foreach (Tour tour in AllTours())
+            {
+                string row = $"{tour.ID},{tour.dt},{tour.placeOfDeparture},{tour.placeOfArrival}, {tour.cost}";
+                writer.WriteLine(row);
+            }
         }
     }
 
-    private void SaveTourInformationRecursive(AVLNode node, StreamWriter writer)
+    public IEnumerable<Tour> AllTours()
+    {
+        return AllToursRecursive(root);
+    }
+    private IEnumerable<Tour> AllToursRecursive(AVLNode node)
     {
         if (node != null)
         {
-            SaveTourInformationRecursive(node.Left, writer);
-            writer.WriteLine(node.Tour);
-            SaveTourInformationRecursive(node.Right, writer);
+            foreach (Tour tour in AllToursRecursive(node.Left))
+            {
+                yield return tour;
+            }
+
+            yield return node.Tour;
+
+            foreach (Tour tour in AllToursRecursive(node.Right))
+            {
+                yield return tour;
+            }
         }
     }
 
     public void LoadTourInformation()
     {
-        string fileName = "tour-information.txt";
+
+        string fileName = "tour-information.csv";
         string[] rows = File.ReadAllLines(fileName);
 
         foreach (string row in rows)
         {
-            Tour tour = Tour.Parse(row);
-            Add(tour);
+            string[] infos = row.Split(',');
+
+            if (infos.Length == 5)
+            {   
+                int id = infos[0];
+                DateTime dt = infos[1];
+                string placeOfArrival = infos[2];
+                string placeOfDeparture = infos[3];
+                double cost = infos[4];
+
+                Tour tour = new Tour(id, dt, placeOfArrival, placeOfDeparture, cost);
+                Add(tour);
+            }
         }
     }
+
 }
