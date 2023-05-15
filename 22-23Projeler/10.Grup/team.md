@@ -1,0 +1,15 @@
+### 10. Grup
+
+Proje: BİR TUR/SERVİS FİRMASININ ARAÇLARI, PERSONELİ VE TUR/SERVİS BİLGİLERİ İLE DETAYLARI TUTACAK OLAN BİR YAZILIM PROJESİ
+
+- Sedef TİMUR 032090037
+- Mustafa Arda Türkmen 032090057
+- Betül Bayram 032090001
+- Batuhan Batuhan 032090083
+- Kader SAL 032090033
+- Mustafa Bulut 032090026
+- Şenay Sueda ÖZKAN 032090016
+- Meral Çoban 032090032
+- Buğra Kaan İÇER 032090019
+- Songül ABA 032090040
+- İsmail Hakkı Gündoğdu 032090109
