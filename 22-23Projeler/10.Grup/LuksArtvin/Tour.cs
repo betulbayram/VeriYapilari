@@ -3,8 +3,8 @@ using System.IO;
 using System.Text.Json;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using MyObject
-using Vehicle
+using MyObject;
+using Vehicle;
 
 // Tour sınıfı
 public class Tour
