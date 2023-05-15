@@ -3,6 +3,8 @@ using System.IO;
 using System.Text.Json;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using MyObject
+using Vehicle
 
 // Tour sınıfı
 public class Tour
@@ -12,11 +14,11 @@ public class Tour
     public string placeOfDeparture;
     public string placeOfArrival;
     public double cost;
-    //private Personel personel;
-    //private Arac arac;
+    public MyObject personel;
+    public Vehicle vehicle;
 
 
-    public Tour(int id, DateTime date, string departure, string arrival, double cost)
+    public Tour(int id, DateTime date, string departure, string arrival, double cost, MyObject personel, Vehicle vehicle)
     {
         this.ID = id;
         while(date < DateTime.Now)
@@ -30,11 +32,13 @@ public class Tour
         this.placeOfDeparture = departure;
         this.placeOfArrival = arrival;
         this.cost = cost;
+        this.personel = personel;
+        this.vehicle = vehicle;
     }
 
     public override string ToString()
     {
-        return $"ID: {ID}, Date: {dt}, From: {placeOfDeparture}, To: {placeOfArrival}, Cost: {cost}";
+        return $"ID: {ID}, Date: {dt}, From: {placeOfDeparture}, To: {placeOfArrival}, Cost: {cost}, Sofor: {personel.name}, Arac: {vehicle.aracPlakasi}";
     }
 
     public int getID() {return ID;}
@@ -59,7 +63,11 @@ public class Tour
     public double getCost() {return cost;}
     public void setCost(double cost) {this.cost = cost;}
 
+    public MyObject getPersonel() {return personel;}
+    public void setPersonel(MyObject personel) {this.personel = personel;}
 
+    public Vehicle getVehicle() {return vehicle;}
+    public void setVehicle(Vehicle vehicle) {this.vehicle = vehicle;}
 
     
 }
