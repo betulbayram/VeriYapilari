@@ -41,8 +41,25 @@ namespace personeller
         public void Remove(int key)
         {
             int hash = Hash(key);
-            table[hash] = null;
+            int index = hash;
+            while (table[index] != null)
+            {
+                if (table[index].StartsWith(key + ","))
+                {
+                    table[index] = null;
+                    return;
+                }
+                index = (index + 1) % TABLE_SIZE; // Boş adres bulana kadar ilerle
+                if (index == hash)
+                {
+                    // Tablo dolu, hata mesajı ver ve çık
+                    Console.WriteLine("Aranan kayıt bulunamadı.");
+                    return;
+                }
+            }
+            Console.WriteLine("Aranan kayıt bulunamadı.");
         }
+
         public string Search(int key)
         {
             int hash = Hash(key);
@@ -62,7 +79,7 @@ namespace personeller
 
         private void SaveToCsv(string fileName)
         {
-            string fullPath = Path.Combine("C:\\Users\\MERAL\\Desktop", fileName);
+            string fullPath = Path.Combine("C:\\Users\\songu\\OneDrive\\Masaüstü", fileName);
             StringBuilder sb = new StringBuilder();
 
             // Başlık (header) satırını ekle
