@@ -5,7 +5,7 @@ Proje: BİR TUR/SERVİS FİRMASININ ARAÇLARI, PERSONELİ VE TUR/SERVİS BİLGİ
 - Sedef TİMUR 032090037
 - Mustafa Arda Türkmen 032090057
 - Betül Bayram 032090001
-- Batuhan Batuhan 032090083
+- Batuhan Erdin 032090083
 - Kader SAL 032090033
 - Mustafa Bulut 032090026
 - Şenay Sueda ÖZKAN 032090016
