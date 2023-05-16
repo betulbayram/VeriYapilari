@@ -11,19 +11,12 @@ namespace Araclar
         static void AracMain(string[] args)
         {
              İkiYönlüListe liste = new İkiYönlüListe();//liste olustur
-
-
-            //  ReadCsvFile(liste);//csvokuyorum listeye ekliyorum
-
-            //   WriteCsvFile(liste);//listedekileri csvye yazıyorumyazıyorum
-
-            //   Console.ReadLine();
         }
-        public static void ReadCsvFile(İkiYönlüListe liste)
+        public static void ReadCsvFile(İkiYönlüListe liste)//csv dosyasını okur ve elemanları iki yönlü listeye ekler
         {
             var csvFileDescription = new CsvFileDescription// csv okunma kurallarını tanımlar
             {
-                FirstLineHasColumnNames = true,
+                FirstLineHasColumnNames = true, //ilk satır başlık isimleridir
                 IgnoreUnknownColumns = true,
                 SeparatorChar=',',
                 UseFieldIndexForReadingData=false,
@@ -31,14 +24,14 @@ namespace Araclar
 
             var csvContext = new CsvContext();
             var araclar = csvContext.Read<Vehicle>("C:/Users/ejder/Desktop/veriyapilariproje/araclarStogu.csv" +
-                "", csvFileDescription);
+                "", csvFileDescription);//csv dosyası okunur ve araclar değişkenine atanır
             foreach (var arac in araclar)
             {
-                liste.Ekle(arac);
+                liste.Ekle(arac); //araclardaki her Vehicle ikiyönlü listemize ekle fonksiyonu ile eklenir
             }     
            
         }
-        public static void WriteCsvFile(İkiYönlüListe liste)
+        public static void WriteCsvFile(İkiYönlüListe liste)//listedeki elemanları csv dosyasına yazar 
         {
             var aracList = new List<Vehicle>();
             İkiYönlüListe tempList = new İkiYönlüListe();
@@ -50,21 +43,21 @@ namespace Araclar
                 aracList.Add(tempList.bas.Arac);
                 tempList.bas = tempList.bas.Sonraki;
                 
-            } while (tempList.bas.Arac.id != kontrol);
+            } while (tempList.bas.Arac.id != kontrol);//iki yönlü listedeki elemanları string arac listesine ekler
 
-            var csvFileDescription = new CsvFileDescription
+            var csvFileDescription = new CsvFileDescription//csv okuma kuralları
             {
                 FirstLineHasColumnNames = true,               
                 SeparatorChar = ',',      
             };
             var csvContext = new CsvContext();
-            csvContext.Write(aracList, "C:/Users/ejder/Desktop/veriyapilariproje/araclarStogu.csv", csvFileDescription);
+            csvContext.Write(aracList, "C:/Users/ejder/Desktop/veriyapilariproje/araclarStogu.csv", csvFileDescription);//listedeki aracları csv dosyasına yazar
             Console.WriteLine("Basarili");
 
         }
-        public static List<string> ReturnCsvFile(İkiYönlüListe liste)
+        public static List<string> ReturnCsvFile(İkiYönlüListe liste)//csv dosyasındaki aracları tabloda göstermek için list string olarak döndüren bir metod
         {
-            var csvFileDescription = new CsvFileDescription
+            var csvFileDescription = new CsvFileDescription//csv okuma kuralları
             {
                 FirstLineHasColumnNames = true,
                 IgnoreUnknownColumns = true,
@@ -75,7 +68,7 @@ namespace Araclar
             tabloList.Add("Id".PadRight(15)+"Arac Plakası".PadRight(15)+"Marka".PadRight(15)+"Model".PadRight(15)+"Arac turu".PadRight(15)+"Uretim Yılı".PadRight(15)+"Koltuk Sayısı".PadRight(15)+"Klima".PadRight(15)+"Wifi".PadRight(15)+"\n");
             var csvContext = new CsvContext();
             var araclar = csvContext.Read<Vehicle>("C:/Users/ejder/Desktop/veriyapilariproje/araclarStogu.csv", csvFileDescription);
-            foreach (var arac in araclar)
+            foreach (var arac in araclar)//araclardaki elemanları teker teker tabloliste ekler
             {
                 tabloList.Add(arac.id.ToString().PadRight(15) +  arac.aracPlakasi.ToString().PadRight(15) +  arac.marka.ToString().PadRight(15) +  arac.model.ToString().PadRight(15)
                     +  arac.aracturu.ToString().PadRight(15) + arac.uretimYili.ToString().PadRight(15) + arac.koltukSayisi.ToString().PadRight(15)
